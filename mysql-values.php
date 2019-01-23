@@ -1,25 +1,25 @@
 <?php 
 
 
-$servername = "127.0.0.1";
-$username = "bits";
-$password = "lite@123";
-$dbName = "imarcat";
-$DB_host = "127.0.0.1";
-$DB_user = "bits";
-$DB_pass = "lite@123";
-$DB_name = "imarcat";
-
-
-
 // $servername = "127.0.0.1";
-// $username = "root";
-// $password = "";
+// $username = "bits";
+// $password = "lite@123";
 // $dbName = "imarcat";
 // $DB_host = "127.0.0.1";
-// $DB_user = "root";
-// $DB_pass = "";
+// $DB_user = "bits";
+// $DB_pass = "lite@123";
 // $DB_name = "imarcat";
+
+
+
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbName = "imarcat";
+$DB_host = "127.0.0.1";
+$DB_user = "root";
+$DB_pass = "";
+$DB_name = "imarcat";
 
 
 
