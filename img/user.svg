@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#XMLID_18_);}
+	.st1{fill:#58595B;}
+	.st2{fill:#808285;}
+</style>
+<g id="XMLID_4_">
+	<g id="XMLID_8_">
+		<defs>
+			<circle id="XMLID_29_" cx="128" cy="128" r="116"/>
+		</defs>
+		<clipPath id="XMLID_18_">
+			<use xlink:href="#XMLID_29_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="XMLID_6_" class="st0">
+			<circle id="XMLID_1_" class="st1" cx="128" cy="223.6" r="64"/>
+			<path id="XMLID_14_" class="st2" d="M128,299.7c-41.9,0-76-34.1-76-76s34.1-76,76-76s76,34.1,76,76S169.9,299.7,128,299.7z
+				 M128,171.7c-28.6,0-52,23.3-52,52s23.3,52,52,52s52-23.3,52-52S156.6,171.7,128,171.7z"/>
+		</g>
+	</g>
+	<g id="XMLID_5_">
+		<path id="XMLID_11_" class="st2" d="M128,256C57.4,256,0,198.6,0,128S57.4,0,128,0s128,57.4,128,128S198.6,256,128,256z M128,24.1
+			C70.7,24.1,24.1,70.7,24.1,128S70.7,231.9,128,231.9S231.9,185.3,231.9,128S185.3,24.1,128,24.1z"/>
+	</g>
+	<g id="XMLID_9_">
+		<path id="XMLID_2_" class="st2" d="M128,140.6c-24.4,0-44.2-19.8-44.2-44.2s19.8-44.2,44.2-44.2s44.2,19.8,44.2,44.2
+			S152.4,140.6,128,140.6z M128,76.3c-11.1,0-20.1,9-20.1,20.1s9,20.1,20.1,20.1s20.1-9,20.1-20.1S139.1,76.3,128,76.3z"/>
+	</g>
+</g>
+</svg>
