@@ -46,6 +46,7 @@ session_start();
 <div class="content container">
 <h1>Zip file upload result</h1>
 <hr>
+<code>
 <?php
 include 'mysql-values.php';
 $fullname = $_SESSION['fullname'];
@@ -69,7 +70,7 @@ else
    echo "move_uploaded_file failed";
    exit();
 }
-
+</code>
 $location=`"podcast_songs/`.`$fullname"`;
 
 $name_of_zipfile = $fullname;

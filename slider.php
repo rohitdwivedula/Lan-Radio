@@ -1,6 +1,6 @@
 <div id="carouselExampleControls" class="carousel slide custom-slider" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active fetch-list" data-title="Bitch Lasagna">
       <img class="d-block w-100" src="img/bitch2.jpg" alt="First slide">
       <div class="carousel-caption">
     <h5>BITCH LASAGNA</h5>

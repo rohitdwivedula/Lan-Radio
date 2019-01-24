@@ -13,7 +13,6 @@ $(".pause-play").css("height",ch);
 
 }
 
-
 organize();
 
 function ajaxify(uri,target,loader){
@@ -117,3 +116,9 @@ $(document).ready(function(){
     });
 });
 
+$(".player").on("ended", function(){
+    $(".player").currentTime = 0;
+    $(".pause-play").attr("src","img/play-button.svg");
+    isPlayButton=true;
+    console.log("ended");
+});

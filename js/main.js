@@ -36,6 +36,7 @@ $(window).on('popstate', function(event) {
 
  $('.nav-search').focus(function(event){
     $(".search-results").css("display","block");
+    $(".custom-search-inner").focus();
  });
  $('.custom-search-inner').focus(function(event){
     $(".search-results").css("display","block");
@@ -52,4 +53,19 @@ $(window).on('popstate', function(event) {
 
     var val = $('.custom-search-inner').val();
     qsearch(val);
- });  
+ });
+
+
+
+ function updateBrowse(){
+    var selected = $(".browse-sort").val();
+    var partURI = "browse.php?sort=";
+    if(selected === "Sort by Date ( Newest first )"){
+       partURI+="1";
+       ajaxify(partURI,"content-root");
+
+    }else{
+        partURI+="2";
+        ajaxify(partURI,"content-root");
+    }
+ }  

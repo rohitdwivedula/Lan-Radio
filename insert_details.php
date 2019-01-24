@@ -78,7 +78,7 @@ include 'mysql-values.php';
 	
 	
 	if(mysqli_query($conn, $qry)){
-    echo "<h2>Records added successfully.</h2>";
+    echo "<h2>Records added successfully. Time for Step 2.</h2>";
      } else{
     echo "<h2>ERROR: Could not able to execute $sql. " . mysqli_error($conn);
     echo "</h2>";
@@ -118,7 +118,7 @@ $qry="CREATE TABLE `imarcat`.`$fullname` ( `id` INT NOT NULL AUTO_INCREMENT , `s
                               </div>
       </form>
   <hr>
-  <H2>You can close this page now</H2>
+
 </div>
     
 </body>
