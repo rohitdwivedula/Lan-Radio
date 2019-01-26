@@ -70,7 +70,6 @@ else
    echo "move_uploaded_file failed";
    exit();
 }
-</code>
 $location=`"podcast_songs/`.`$fullname"`;
 
 $name_of_zipfile = $fullname;
@@ -83,14 +82,16 @@ foreach($list as $item) {
   $noExtension = substr($item, 0 , (strrpos($item, ".")));
   $sql = "INSERT INTO `$fullname` (`id`, `song_title`, `song_location`) VALUES (NULL, '$noExtension', '$item');";
   if(mysqli_query($conn, $sql)){
-  	echo "<h4>Done. You are good to go!</h4>";
+  	echo "<h4>Added a song .You are good to go!</h4>";
   }else{
     echo "FATAL ERROR!<br>	";
   }
 
 }
 
-?>
+?></code>
+<hr>
+<a class="btn btn-success" href="create-podcast.php">Add another podcast</a>
 </div>
 </body>
 </html>

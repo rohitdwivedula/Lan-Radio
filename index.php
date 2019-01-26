@@ -16,11 +16,13 @@ http://192.168.0.102:8000/stream
     <title>LAN Radio</title>
   </head>
   <body>
+        <div class="album-smart"></div>
     <div class="loader-trans">
         <div class="ajaxify-loader">
           Loading
     </div>      
     </div>
+
 
 
 
@@ -79,6 +81,7 @@ http://192.168.0.102:8000/stream
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/ajaxify.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/chat.js"></script>
     
   </body>
 </html>
