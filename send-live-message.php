@@ -13,4 +13,6 @@ fclose($file);
 array_push($chat->texts,$newEntry);
 $file_write = fopen("chat.json", "w") or die("{\"errorMessage\":false\"}");
 fwrite($file_write,json_encode($chat));
+
+echo "Message $message sent";
 ?>

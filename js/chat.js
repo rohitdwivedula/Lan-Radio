@@ -5,9 +5,6 @@ var refreshChat;
 var count=0;
 function sendChat(result){
 	chat = result;
-	if(typeof chat !='object'){
-		chat = JSON.parse(result);	
-	}
 
 }
 
@@ -56,7 +53,9 @@ function scrollBottom(){
 
 function loadChat(){
 	var res = "result";
-	$.ajax("chat.json")
+	var d = new Date();
+	var uri="chat.json?time="+d.getTime();
+	$.ajax(uri)
 	.done(function(result){
 		sendChat(result);
 		processChat(chat);
