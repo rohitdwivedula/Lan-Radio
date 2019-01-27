@@ -1,3 +1,4 @@
+<!--Author:Divyanshu Agrawal-->
 <?php 
 $message = $_GET["message"];
 $message = htmlspecialchars($message);
