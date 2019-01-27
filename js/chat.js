@@ -6,7 +6,7 @@ var refreshChat;
 var count = 0;
 
 function sendChat(result) {
-    chat = result;
+    chat = JSON.parse(result);
 
 }
 
