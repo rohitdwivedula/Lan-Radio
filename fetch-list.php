@@ -40,7 +40,7 @@ $fullname=$_REQUEST['title'];
        <?php 
        }
            	}else{
-                ECHO " fuck";
+                ECHO " <h1 class='red'>Podcast not found</h1><p>It was probably deleted</p>";
             }
                ?>
             

@@ -1,6 +1,6 @@
 <?php 
 
-$localhost = false;
+$localhost = true;
 
 if(!$localhost){
 

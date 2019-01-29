@@ -68,4 +68,28 @@ $(window).on('popstate', function(event) {
         partURI+="2";
         ajaxify(partURI,"content-root");
     }
- }  
+ }
+
+function processScroll(scroll){
+    if(scroll==="up"){
+        $(".custom-navbar").removeClass("scrolled");
+    }else{
+        $(".custom-navbar").addClass("scrolled");
+    }
+    organize();
+}
+
+
+(function () {
+    var previousScroll = 0;
+
+    $(window).scroll(function(){
+       var currentScroll = $(this).scrollTop();
+       if (currentScroll > previousScroll){
+           processScroll("down");
+       } else {
+          processScroll("up");
+       }
+       previousScroll = currentScroll;
+    });
+}()); //run this anonymous function immediately

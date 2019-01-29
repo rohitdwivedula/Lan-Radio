@@ -425,9 +425,16 @@ audio{
 .my-message .live-message{
 	color: white;
 }
+.scrolled{
+	top:-70px;
+	padding-bottom:0px;
+}
 
 
 @media only screen and (max-width: 600px){
+	.scrolled{
+		top:0px;
+	}
 	.logo{
 		text-align: center;
 	}
@@ -493,12 +500,16 @@ audio{
 		width:25%;
 		font-size:10px;
 		margin:0px;
-
+		margin-bottom: 0px !important;
 	}
 	.links a.active{
 		border-bottom:2px solid black;
 	}
+	.scrolled{
+		transition: all 0.3s;
+	}
 	.custom-navbar{
+		transition: all 0.3s;
 		padding:5px;
 		padding-bottom:10px;
 	}
