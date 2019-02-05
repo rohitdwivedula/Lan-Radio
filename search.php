@@ -1,7 +1,7 @@
 <?php 
 include 'mysql-values.php';
 $search = $_GET['q'];
-$sql = "SELECT * FROM `podcast_details` WHERE (`fullname` LIKE '%$search%' OR `artist` LIKE '%$search%')";
+$sql = "SELECT * FROM `podcast_details` WHERE (`fullname` LIKE '%$search%' OR `artist` LIKE '%$search%') LIMIT 7";
 $result = mysqli_query($conn, $sql);
 
 

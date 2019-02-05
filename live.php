@@ -2,23 +2,48 @@
 <main class="container main-content loaded-container">
 	<div class="row">
 		<div class="col-md-6">
-			<div class="row">
+			<div class="row radio-category">
 				<div class="col-md-6 live-album-art">
-					<img src="img/arena.jpg">
+					<img src="img/Pop.jpg">
 				</div>
 				<div class="col-md-6">
 					
-					<h2 class="red">ARENA 2018 Football Commentary</h2>
+					<h2 class="red">Pop Music Radio</h2>
 					<hr>
-					<p>Enjoy this live session and participate in live chat. Press the play button to stream.</p>
-					<img src="img/play-button.svg" class="live-play" alt="Play">
+					<p>Enjoy curated pop music.</p>
+					<img src="img/play-button.svg" class="live-play" data-playlist="Pop" alt="Play">
 				</div>			
 			</div>
+			<div class="row radio-category">
+				<div class="col-md-6 live-album-art">
+					<img src="img/rock.jpg">
+				</div>
+				<div class="col-md-6">
+					
+					<h2 class="red">Rock Music Radio</h2>
+					<hr>
+					<p>Enjoy curated rock music.</p>
+					<img src="img/play-button.svg" class="live-play" data-playlist="rock" alt="Play">
+				</div>			
+			</div>
+			<div class="row radio-category">
+				<div class="col-md-6 live-album-art">
+					<img src="img/hip-hop.jpg">
+				</div>
+				<div class="col-md-6">
+					
+					<h2 class="red">Hip Hop Music Radio</h2>
+					<hr>
+					<p>Enjoy curated hip-hop music.</p>
+					<img src="img/play-button.svg" class="live-play" data-playlist="hip-hop" alt="Play">
+				</div>			
+			</div>
+
 
 		</div>
 		<div class="col-md-6 live-chat">
 			<div class="chat-header">
-				<h4 class="red float-left">Live Chat</h4>
+				<h4 class="red float-left">Live Chat for Pop</h4>
 			<button class="full-screen-chat float-right btn btn-secondary full-chat" onclick="fullChat()">Go Full Screen</button>			
 			</div>
 			
