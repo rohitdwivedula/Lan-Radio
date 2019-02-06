@@ -371,10 +371,9 @@ audio {
 }
 
 .play-song:hover {
-    background: #FF5757;
-    color: white;
-    padding: 10px;
-    margin: -10px;
+    color:rgb(200,200,200);
+    opacity:0.8;
+   
 }
 
 .podcast .fetch-list {

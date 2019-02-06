@@ -9,15 +9,8 @@
 <?php
 
 include 'mysql-values.php';
-$sql = "SELECT * FROM podcast_details ORDER BY `podcast_details`.`timestamp` DESC ;";
-if(isset($_GET['sort'])){
-  $sort = $_GET['sort'];
-  if($sort==1){
-    $sql = "SELECT * FROM podcast_details ORDER BY `podcast_details`.`timestamp` DESC ;";
-  }else if($sort==2){
-    $sql = "SELECT * FROM podcast_details ORDER BY `podcast_details`.`timestamp` ASC ;";
-  }
-}
+$sql = "SELECT * FROM podcast_details WHERE `special` = '1' ;";
+
 $result = $conn->query($sql);
 if($result->num_rows > 0){
   $count = 0;
@@ -38,7 +31,7 @@ EOL;
     }
   }
 }else{
-  echo "<h1>Nothing to show</h1>";
+  echo $conn->error;
 }
 
 ?>
