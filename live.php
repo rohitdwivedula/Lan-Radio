@@ -1,49 +1,56 @@
 <!--Author:Divyanshu Agrawal-->
 <main class="container main-content loaded-container">
-	<div class="row">
-		<div class="col-md-6">
-			<div class="row radio-category">
-				<div class="col-md-6 live-album-art">
-					<img src="img/Pop.jpg">
-				</div>
-				<div class="col-md-6">
-					
-					<h2 class="red">Pop Music Radio</h2>
-					<hr>
-					<p>Enjoy curated pop music.</p>
-					<img src="img/play-button.svg" class="live-play" data-playlist="Pop" alt="Play">
-				</div>			
-			</div>
-			<div class="row radio-category">
-				<div class="col-md-6 live-album-art">
-					<img src="img/rock.jpg">
-				</div>
-				<div class="col-md-6">
-					
-					<h2 class="red">Rock Music Radio</h2>
-					<hr>
-					<p>Enjoy curated rock music.</p>
-					<img src="img/play-button.svg" class="live-play" data-playlist="rock" alt="Play">
-				</div>			
-			</div>
-			<div class="row radio-category">
-				<div class="col-md-6 live-album-art">
-					<img src="img/hip-hop.jpg">
-				</div>
-				<div class="col-md-6">
-					
-					<h2 class="red">Hip Hop Music Radio</h2>
-					<hr>
-					<p>Enjoy curated hip-hop music.</p>
-					<img src="img/play-button.svg" class="live-play" data-playlist="hip-hop" alt="Play">
-				</div>			
-			</div>
-
-
+	<h2 class="">
+		24x7 Live Radio Stations
+	</h2>
+	<br>
+	<div class="row live-cards">
+		<div class="col-sm-3">
+		<div class="card" style="padding:0px;">
+  <img class="card-img-top" src="img/Pop.jpg" alt="Card image cap" style="width:100%">
+  <div class="card-body">
+    <h5 class="card-title">Pop Music</h5>
+    <p class="card-text">Enjoy curated pup music, 24x7</p>
+    <a href="#" class="btn btn-primary play-song" data-title="Pop" data-url="pop-stream">&#9658; Play</a>
+  </div>
+</div>
 		</div>
-		<div class="col-md-6 live-chat">
+		<div class="col-sm-3">
+		<div class="card" style="padding:0px;">
+  <img class="card-img-top" src="img/Pop.jpg" alt="Card image cap" style="width:100%">
+  <div class="card-body">
+    <h5 class="card-title">Rock Music</h5>
+    <p class="card-text">Enjoy curated pup music, 24x7</p>
+    <a href="#" class="btn btn-primary">&#9658; Play</a>
+  </div>
+</div>
+		</div>
+		<div class="col-sm-3">
+		<div class="card" style="padding:0px;">
+  <img class="card-img-top" src="img/Pop.jpg" alt="Card image cap" style="width:100%">
+  <div class="card-body">
+    <h5 class="card-title">Hip Hop Music</h5>
+    <p class="card-text">Enjoy curated pup music, 24x7</p>
+    <a href="#" class="btn btn-primary">&#9658; Play</a>
+  </div>
+</div>
+		</div>
+		<div class="col-sm-3">
+		<div class="card" style="padding:0px;">
+  <img class="card-img-top" src="img/Pop.jpg" alt="Card image cap" style="width:100%">
+  <div class="card-body">
+    <h5 class="card-title">Random Music</h5>
+    <p class="card-text">Enjoy curated pup music, 24x7</p>
+    <a href="#" class="btn btn-primary">&#9658; Play</a>
+  </div>
+</div>
+		</div>
+</div>
+	</div>
+	<hr>
+		<div class="col-12 live-chat">
 			<div class="chat-header">
-				<h4 class="red float-left">Live Chat for Pop</h4>
+				<h4 class="red float-left">Live Chat</h4>
 			<button class="full-screen-chat float-right btn btn-secondary full-chat" onclick="fullChat()">Go Full Screen</button>			
 			</div>
 			

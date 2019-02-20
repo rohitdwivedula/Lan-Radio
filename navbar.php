@@ -7,8 +7,8 @@
       <div class="col-md-10">
         <div class="float-right nav-username">
           <div class="user">
-            <img src="img/user.svg">
-            <span>John Doe</span>
+            <img src="img/bits-pilani.png">
+            <span>BITSian</span>
           </div>
         </div>
         <div class="float-right nav-search" tabindex="1">

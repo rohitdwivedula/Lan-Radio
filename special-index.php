@@ -9,7 +9,7 @@
 <?php
 
 include 'mysql-values.php';
-$sql = "SELECT * FROM podcast_details WHERE `special` = '1' ;";
+$sql = "SELECT * FROM podcast_details;";
 
 $result = $conn->query($sql);
 if($result->num_rows > 0){
@@ -36,10 +36,12 @@ EOL;
 
 ?>
       <br>
+</div>
       <div class="row">
         <div class="col-md-12">
                   <hr>
-          Copyright 2019 Lan Radio Commitee, BITS Pilani, Hyderabad Campus.<br>Design & Gaphics by Suraj Thotakura, Server by Naveen Kumar Battula and Created by Divyanshu Agrawal</div>
+          Copyright 2019 Lan Radio Commitee, BITS Pilani, Hyderabad Campus. <b class="red">UNDER CONSTRUCTION</b>
+          <br>Programmed by Divyanshu Agrawal, Design & Gaphics by Suraj Thotakura, Server & Networking by Naveen Kumar Battula.</div>
           <br><br>          
         </div>
 

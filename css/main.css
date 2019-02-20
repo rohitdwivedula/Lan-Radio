@@ -54,12 +54,17 @@ body {
     box-shadow: 0px 0px 5px 0px rgb(200, 200, 200);
 }
 
+.live-cards .card a {
+    background: #FF5757;
+    border: 0px;
+}
+
 .red {
     color: #FF5757;
 }
 
 .main-content h5 {
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
 }
 
 .main-content {
@@ -371,9 +376,8 @@ audio {
 }
 
 .play-song:hover {
-    color:rgb(200,200,200);
-    opacity:0.8;
-   
+    color: rgb(200, 200, 200);
+    opacity: 0.8;
 }
 
 .podcast .fetch-list {
@@ -513,6 +517,19 @@ audio {
     .scrolled {
         top: 0px;
     }
+    .card,
+    .card-body,
+    .card-text,
+    .card-title {
+        width: 100%;
+    }
+    .live-cards .card-text {
+        display: none;
+    }
+    .live-cards .col-sm-3 {
+        margin-bottom: 20px;
+        width: 50%;
+    }
     .logo {
         text-align: center;
     }
@@ -545,6 +562,7 @@ audio {
     .full-chat {
         display: block;
         display: block;
+        width: 100%;
         margin-bottom: 20px;
     }
     .logo img {
