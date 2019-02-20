@@ -10,5 +10,8 @@
 8. ```play_song.php```, ```server.php```, ```show_songs.php```, ```show_podcasts.php```, ```try_show.php``` still has credentials in source code. 
 9. In some places in code, there is no ```exit()``` command after ```header("Location: XYZ")```. Code after ```header()``` [continues to get executed](https://stackoverflow.com/a/42514232) unless we explicitly exit the script.
 10. Salting + hashing user paswords, and store salt in Database. (currently user passwords are only being hashed)
+11. Why is ```recent.php``` in the ```/css , /js``` folders?
+12. It appears album covers are currently being saved in ```/img```. What is ```/podcast_details``` then? Save ICONS and site graphics in ```/img``` folder and all user-generated images (album covers, etc) in another new directory, perhaps ```/medis```.
+
 
 
