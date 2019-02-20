@@ -5,42 +5,43 @@
     <main class="container main-content">
       <br>
       <h5>Featured Podcasts</h5>
-      <div class="row podcast">
-          <div class="col-md-3 fetch-list" data-title="Bitch Lasagna"><img src="podcast_details/bitch_lasagna.jpg" class="podcast-img">
-          <span>Bitch Lasagna</span><span class="artist">PewDiePie</span>
-        </div>
-        <div class="col-md-3 fetch-list" data-title="Fun And Frustation"><img src="podcast_details/f2.jpg" class="podcast-img">
-          <span>Fun And Frustation</span><span class="artist">Venkatesh</span>
+<div class="row podcast">
+<?php
+
+include 'mysql-values.php';
+$sql = "SELECT * FROM podcast_details;";
+
+$result = $conn->query($sql);
+if($result->num_rows > 0){
+  $count = 0;
+  while($row = $result->fetch_assoc()){
+    $count++;
+
+    $fullname = $row["fullname"];
+    $image_location = $row["location"];
+    $artist = $row["artist"];
+echo<<<EOL
+          <div class="col-md-3 fetch-list" data-title="$fullname"><img src="$image_location" class="podcast-img">
+          <span>$fullname</span><span class="artist">$artist</span>
         </div>
 
-        <div class="col-md-3"><img src="img/album-3.jpg" class="podcast-img">
-          <span>How are you</span><span class="artist">Good</span>
-        </div>
-        <div class="col-md-3"><img src="img/album-4.jpg" class="podcast-img">
-          <span>Yellow Circle</span><span class="artist">Dance Club</span>
-        </div>
-      </div>
+EOL;
+    if($count%4==0){
+      echo "</div><div class='row podcast'>";
+    }
+  }
+}else{
+  echo $conn->error;
+}
+
+?>
       <br>
-      <h5>Recent Podcasts</h5>
-      <div class="row podcast">
-        <div class="col-md-3"><img src="img/album-1.jpg" class="podcast-img"></div>
-        <div class="col-md-3"><img src="img/album-2.jpg" class="podcast-img"></div>
-        <div class="col-md-3"><img src="img/album-3.jpg" class="podcast-img"></div>
-        <div class="col-md-3"><img src="img/album-4.jpg" class="podcast-img"></div>
-      </div>
-      <br>
-      <h5>Most Viewed Podcasts</h5>
-      <div class="row podcast">
-        <div class="col-md-3"><img src="img/album-1.jpg" class="podcast-img"></div>
-        <div class="col-md-3"><img src="img/album-2.jpg" class="podcast-img"></div>
-        <div class="col-md-3"><img src="img/album-3.jpg" class="podcast-img"></div>
-        <div class="col-md-3"><img src="img/album-4.jpg" class="podcast-img"></div>
-      </div>
-      <br>
+</div>
       <div class="row">
         <div class="col-md-12">
                   <hr>
-          Copyright 2019 Lan Radio Commitee, BITS Pilani, Hyderabad Campus.<br>Design & Gaphics by Suraj Thotakura, Server by Naveen Kumar Battula and Created by Divyanshu Agrawal</div>
+          Copyright 2019 Lan Radio Commitee, BITS Pilani, Hyderabad Campus. <b class="red">UNDER CONSTRUCTION</b>
+          <br>Programmed by Divyanshu Agrawal, Design & Gaphics by Suraj Thotakura, Server & Networking by Naveen Kumar Battula.</div>
           <br><br>          
         </div>
 
